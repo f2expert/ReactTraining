@@ -7,7 +7,7 @@ function Header() {
             <Row>
                 <Col>
                     <p>List Based</p>
-                    <NavComponent  navList = {navLists} />
+                    <NavComponent firstName="raja" navList = {navLists} />
                     <hr />
                 </Col>
             </Row>
