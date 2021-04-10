@@ -5,6 +5,7 @@ import { Container, Row, Col } from 'reactstrap';
 import LoginComponent from './components/login.component';
 
 import './App.css';
+import RefComponent from './components/ref.component';
 
 function App() {
   const navLists = [{title:'dfdsfdfdsfd', links:'adfsfdfdsfds'}];
@@ -14,7 +15,9 @@ function App() {
       <Row>
         <Col>
           <Header />
-          <LoginComponent />
+          {/*<LoginComponent />*/}
+          <RefComponent />
+
           <Footer />
         </Col>
       </Row>
