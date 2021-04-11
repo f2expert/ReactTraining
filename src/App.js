@@ -8,20 +8,24 @@ import './App.css';
 import RefComponent from './components/ref.component';
 
 function App() {
-  const navLists = [{title:'dfdsfdfdsfd', links:'adfsfdfdsfds'}];
+  const navLists = [{ title: 'dfdsfdfdsfd', links: 'adfsfdfdsfds' }];
   return (
-    
-    <Container>
-      <Row>
-        <Col>
-          <Header />
-          {/*<LoginComponent />*/}
-          <RefComponent />
-
-          <Footer />
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <Container fluid className="bg-primary">
+        <Row>
+          <Col>
+            <Header />
+          </Col>
+        </Row>
+      </Container>
+      <Container className="pt-5">
+        <Row>
+          <Col>
+            <RefComponent />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 

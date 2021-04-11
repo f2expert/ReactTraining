@@ -1,14 +1,15 @@
-import { Container, Row, Col} from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import NavComponent from '../components/navbar/nav.component';
 function Header() {
-    const navLists = [{title:'Home', links:'homeeeeee'}];
+    const navLists = [{ title: 'Home', links: 'homeeeeee' }];
     return (
         <Container>
             <Row>
-                <Col>
-                    <p>List Based</p>
-                    <NavComponent firstName="raja" navList = {navLists} />
-                    <hr />
+                <Col className="col-md-2">
+                    <a className="navbar-brand">List Based</a>
+                </Col>
+                <Col className="col-md-10">
+                    <NavComponent navList={navLists} />
                 </Col>
             </Row>
         </Container>
