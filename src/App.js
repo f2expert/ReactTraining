@@ -1,11 +1,12 @@
 import Header from './containers/header';
-import Footer from './containers/footer';
-
 import { Container, Row, Col } from 'reactstrap';
-import LoginComponent from './components/login.component';
+import { Switch, Route, Redirect} from 'react-router-dom';
+
+import Home from './views/home';
+import About from './views/about';
+import Contact from './views/contact';
 
 import './App.css';
-import RefComponent from './components/ref.component';
 
 function App() {
   const navLists = [{ title: 'dfdsfdfdsfd', links: 'adfsfdfdsfds' }];
@@ -21,7 +22,13 @@ function App() {
       <Container className="pt-5">
         <Row>
           <Col>
-            <RefComponent />
+            <Switch>
+              <Route path="/" exact component={ Home }  />
+              <Route path="/about" component={About}/>
+              <Route path="/home" component={ Home }  />
+              <Route path="/contact" component={Contact}/>
+              <Redirect from="/*" to="/home" />
+            </Switch>
           </Col>
         </Row>
       </Container>

@@ -1,7 +1,11 @@
 import { Container, Row, Col } from 'reactstrap';
 import NavComponent from '../components/navbar/nav.component';
 function Header() {
-    const navLists = [{ title: 'Home', links: 'homeeeeee' }];
+    const navLists = [
+        { title: 'Home', links: '/home' },
+        { title: 'About', links: '/about' },
+        { title: 'Contact', links: '/contact' }
+    ];
     return (
         <Container>
             <Row>
