@@ -4,7 +4,8 @@ function Header() {
     const navLists = [
         { title: 'Home', links: '/home' },
         { title: 'About', links: '/about' },
-        { title: 'Contact', links: '/contact' }
+        { title: 'Contact', links: '/contact' },
+        { title: 'Stateful', links: '/stateful' }
     ];
     return (
         <Container>
