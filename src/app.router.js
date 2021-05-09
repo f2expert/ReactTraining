@@ -6,6 +6,7 @@ import PreLoader from './components/preLoader'
 const Home = lazy(()=> import('./views/home'));
 const About = lazy(()=> import('./views/about'));
 const Contact = lazy(()=> import('./views/contact'));
+const Stateful = lazy(()=> import('./views/stateful'));
 
 function AppRouter() {
     return (
@@ -14,6 +15,7 @@ function AppRouter() {
                 <Route path="/" exact component={Home} />
                 <Route path="/about" component={About} />
                 <Route path="/home" component={Home} />
+                <Route path="/stateful" component={Stateful} />
                 <Route path="/contact" component={Contact} />
                 <Redirect from="/*" to="/home" />
             </Suspense>
