@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
+import { useSelector } from 'react-redux'
 import NavComponent from '../components/navbar/nav.component';
 function Header() {
     const navLists = [
