@@ -2,6 +2,7 @@ import Header from './containers/header';
 import { Container, Row, Col } from 'reactstrap';
 import './App.css';
 import AppRouter from './app.router';
+import UserList from './components/userList'
 
 function App() {
   const navLists = [{ title: 'dfdsfdfdsfd', links: 'adfsfdfdsfds' }];
@@ -14,6 +15,9 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <hr />
+      <UserList/>
+      <hr />
       <Container className="pt-5">
         <Row>
           <Col>
